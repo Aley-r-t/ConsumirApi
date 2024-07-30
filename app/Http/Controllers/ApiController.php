@@ -19,7 +19,6 @@ class ApiController extends Controller
 
         // Filtrar los elementos si es necesario
         $characters = $data['items'] ?? [];
-
         // Retornar la data a una vista o como JSON
         return view('welcome', ['characters' => $characters]);
         // return response()->json($characters);
